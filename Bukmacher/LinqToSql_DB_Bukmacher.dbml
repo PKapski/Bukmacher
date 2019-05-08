@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DB_Bukmacher" Class="LinqToSql_DB_BukmacherDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DB_Bukmacher.mdf;Integrated Security=True" SettingsObjectName="Bukmacher.Properties.Settings" SettingsPropertyName="DB_BukmacherConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Matches" Member="Matches">
+    <Type Name="Match">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Sport" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Team1" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Team2" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[1]" Member="_1" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="X" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="[2]" Member="_2" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="[Data spotkania]" Member="Data_spotkania" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
